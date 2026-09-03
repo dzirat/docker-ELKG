@@ -1,5 +1,8 @@
-script.groovy.sandbox.enabled: true
-script.inline: on
-script.indexed: on
-http.cors.enabled: true
-http.cors.allow-origin: "*"
+cluster.name: "elkg-cluster"
+network.host: 0.0.0.0
+# Single-node lab setup — not for production
+discovery.type: single-node
+# Security is disabled here purely to keep this educational stack simple.
+# Re-enable xpack.security.enabled and configure TLS/users for anything
+# beyond a local sandbox.
+xpack.security.enabled: false
